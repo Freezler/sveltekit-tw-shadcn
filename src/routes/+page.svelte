@@ -1,5 +1,5 @@
 <script lang="ts">
-  import LandingHero from "./LandingHero.svelte";
+  import LandingHero from "../lib/components/landing-hero/LandingHero.svelte";
 </script>
 
 <!-- landing page -->
