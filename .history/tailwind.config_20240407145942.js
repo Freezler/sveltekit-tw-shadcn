@@ -1,0 +1,37 @@
+import { fontFamily } from "tailwindcss/defaultTheme";
+
+
+const config = {
+  darkMode: ["class"],
+  content: ["./src/**/*.{html,js,svelte,ts,css}"],
+  safelist: ["dark"],
+  theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px"
+      }
+    },
+    extend: {
+      backgroundImage: {
+       
+        "hero-image": "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+
+      }
+    },
+			colors: {
+      
+    },
+    borderRadius: {
+      lg: "var(--radius)",
+      md: "calc(var(--radius) - 2px)",
+      sm: "calc(var(--radius) - 4px)"
+    },
+    fontFamily: {
+      sans: [...fontFamily.sans]
+    }
+  }
+};
+
+export default config;

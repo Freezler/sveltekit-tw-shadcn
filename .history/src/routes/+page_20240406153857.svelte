@@ -1,0 +1,20 @@
+<script lang="ts">
+   import { Button } from "$lib/components/ui/button";
+</script>
+
+<div
+  class="w-full text-center text-pretty-violet-100 dark:text-pretty-violet-200">
+  <h1 class="text-3xl">
+    Welcome to my SvelteKit
+    ShadCN-svelte TailwindCSS
+    starterkit
+  </h1>
+  <p>
+  
+    Visit <a
+      href="https://git.freezler.com/sveltekit-tw-shadcn"
+      >the project repo
+    </a> to read the documentation
+  </p>
+  <Button variant="outline">Get Started</Button>
+</div>

@@ -1,0 +1,29 @@
+<script lang="ts">
+  import { AspectRatio } from "$lib/components/ui/aspect-ratio";
+</script>
+
+<div class="grid items-center justify-center place-items-center bg-gradient-to-tr from-indigo-900 to-cyan-400">
+  <AspectRatio
+    ratio={16 / 9}
+    class="w-screen bg-cover bg-muted">
+    <img
+      src="https://images.https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+      alt="alt"
+      class="object-cover object-center w-screen opacity-90" />
+  </AspectRatio>
+  <div
+    class=" z-10 text-center p-2 text-[#181414] ">
+    <h1
+      class="text-2xl bg-[hsla(0,0%,100%,.5)] ">
+      Welcome to my SvelteKit
+      ShadCN-svelte
+      TailwindCSS starterkit
+    </h1>
+    <p>
+      Visit <a
+        href="https://git.freezler.com/sveltekit-tw-shadcn"
+        >the project repo
+      </a> to read the documentation
+    </p>
+  </div>
+</div>
