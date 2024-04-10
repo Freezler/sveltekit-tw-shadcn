@@ -21,7 +21,7 @@
         about the project by reading the
         <Button
           variant="outline"
-          class="text-red-300 hover:text-white bg-blue-800 h-[48px] hover:bg-blue-400 transition-colors duration-700"
+          class="w-[148px] text-red-300 hover:text-white bg-blue-800 h-[48px] hover:bg-blue-400 transition-colors duration-700"
           href="https://github.com/Freezler/sveltekit-tw-shadcn">
            docs
         </Button> on github
