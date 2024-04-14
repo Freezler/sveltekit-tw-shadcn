@@ -79,7 +79,7 @@
           ? 'flex'
           : 'hidden'}">
         <div
-          class="font-larger flex flex-col py-6 w-[80vw] h-[60vh] items-center justify-center md:flex-row bg-red-300/80 md:bg-transparent md:space-x-4 rounded-xl">
+          class="font-sflex flex-col py-6 w-[80vw] h-[60vh] items-center justify-center md:flex-row bg-red-300/80 md:bg-transparent md:space-x-4 rounded-xl">
           <a class="text-white hover:text-blue-400" href="/home"
             >Home</a>
           <a class="text-white hover:text-blue-400" href="/blog"
@@ -89,7 +89,6 @@
             href="/contact">Contact</a>
           <a class="text-white hover:text-blue-400" href="/about"
             >About me</a>
-          <a class="px-3 py-1 text-sm text-white border-2 rounded-md md:absolute bg-fuchsia-500/50 right-4 hover:text-blue-400" href="/log-signIn"><button type="submit">Log in-or-sign up</button></a>
         </div>
       </div>
     </nav>
