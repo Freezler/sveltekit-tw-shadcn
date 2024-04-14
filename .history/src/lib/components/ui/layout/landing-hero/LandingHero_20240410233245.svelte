@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class="absolute top-0 grid w-screen h-screen text-center place-items-center">
+  class="absolute grid w-screen h-screen text-center place-items-center to§">
   <div
     class="bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80')] w-screen h-full bg-cover bg-center flex flex-row items-center justify-center">
     <div

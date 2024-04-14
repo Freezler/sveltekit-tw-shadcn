@@ -1,0 +1,7 @@
+<div class="w-screen h-20 bg-black">
+    <nav class="flex items-center justify-center h-full space-x-4 text-xl text-white h">
+        <a href="/">Home</a>
+        <a href="/#blank">About</a>
+        <a href="/#blank">Posts</a>
+    </nav>
+</div>
