@@ -23,7 +23,7 @@
             type="button"
             class="flex text-white button-one md:hidden focus:outline-none focus:text-gray-400"
             aria-controls="primary-navigation"
-            aria-pressed="true">
+            aria-pressed="false">
             <svg
               class="hb"
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@
           ? 'flex'
           : 'hidden'}">
         <div
-          class="flex flex-col py-6 w-[80vw] h-[60vh] items-center justify-center md:flex-row bg-red-300/80 md:bg-transparent md:space-x-4 rounded-xl">
+          class="flex flex-col py-6 md:flex-row bg-red-300/80 md:bg-transparent md:space-x-4 rounded-xl">
           <a class="text-white hover:text-blue-400" href="/home"
             >Home</a>
           <a class="text-white hover:text-blue-400" href="/blog"

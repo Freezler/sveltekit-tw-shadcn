@@ -23,7 +23,7 @@
             type="button"
             class="flex text-white button-one md:hidden focus:outline-none focus:text-gray-400"
             aria-controls="primary-navigation"
-            aria-pressed="true">
+            aria-pressed="false">
             <svg
               class="hb"
               xmlns="http://www.w3.org/2000/svg"
