@@ -1,0 +1,9 @@
+<main
+  class="container grid h-screen place-items-center bg-indigo-950">
+  <section>
+    <form>
+      <h3 class="text-white">Sign In</h3>
+      input:t
+    </form>
+  </section>
+</main>

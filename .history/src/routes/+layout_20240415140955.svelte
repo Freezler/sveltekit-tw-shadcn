@@ -1,0 +1,10 @@
+<script lang="ts">
+  import "../app.css";
+  import Navbar from "../lib/components/ui/layout/navbar-component/navbar.svelte";
+
+</script>
+
+<main c>
+  <Navbar />
+  <slot />
+</main>
