@@ -80,7 +80,7 @@
           : 'hidden'}">
         <div
           class="font-larger flex flex-col py-6 w-[80vw] h-[60vh] items-center justify-center md:flex-row bg-stone-800/50 md:bg-transparent md:space-x-4 rounded-xl">
-          <a class="text-white hover:text-blue-400" href="/"
+          <a class="text-white hover:text-blue-400" href="/home"
             >Home</a>
           <a class="text-white hover:text-blue-400" href="/blog"
             >Blughs</a>

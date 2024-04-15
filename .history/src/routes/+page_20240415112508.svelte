@@ -1,8 +1,8 @@
 <script lang="ts">
   import LandingHero from "../lib/components/ui/layout/landing-hero/LandingHero.svelte";
 </script>
-
 <main>
-  <!-- landing page -->
-  <LandingHero></LandingHero>
+<!-- landing page -->
+<LandingHero>
+</LandingHero>
 </main>
