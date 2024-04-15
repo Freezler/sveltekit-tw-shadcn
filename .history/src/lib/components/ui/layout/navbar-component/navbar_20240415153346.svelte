@@ -1,10 +1,38 @@
 <script lang="ts">
   let showMenu = false;
 
+  
+	let name = 'world';
+	
+	function handleClickOutside() {
+		alert('Click outside!');
+	}
+
+
   function toggleNavbar() {
     showMenu = !showMenu;
   }
   /** Dispatch event on click outside of node */
+export function clickOutside(node) {
+  
+  const handleClick = event => {
+    if (node && !node.contains(event.target) && !event.defaultPrevented) {
+      node.dispatchEvent(
+        new CustomEvent('click_outside', node)
+      )
+    }
+  }
+
+	document.addEventListener('click', handleClick, true);
+  
+  return {
+    destroy() {
+      document.removeEventListener('click', handleClick, true);
+    }
+	}
+}
+
+
 </script>
 
 <div class="fixed top-0 left-0 z-50 w-full header">
@@ -75,8 +103,7 @@
         </div>
       </div>
 
-      <div
-      
+      <div use:clickOutside on:click_outside={handleClickOutside}
         class="absolute top-0 left-0 z-100 right-0 flex-col grid place-items-center justify-center items-center bg-blue-900/60 h-screen md:h-full md:bg-transparent md:flex md:flex-row md:items-center md:justify-center space-x-0 md:space-x-4 md:mx-auto {showMenu
           ? 'flex'
           : 'hidden'}">

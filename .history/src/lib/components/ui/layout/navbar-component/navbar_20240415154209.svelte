@@ -1,13 +1,40 @@
 <script lang="ts">
   let showMenu = false;
 
+
+
+  function handleClickOutside() {
+    toggleNavbar();
+  }
+
   function toggleNavbar() {
     showMenu = !showMenu;
   }
   /** Dispatch event on click outside of node */
+ function clickOutside(node: HTMLElement) {
+    const handleClick = (e: MouseEvent) => {
+        if (
+            node &&
+            !node.contains(e.target as Node) &&
+            !e.defaultPrevented
+        ) {
+            node.dispatchEvent(
+                new CustomEvent("click_outside", { detail: node })
+            );
+        }
+    };
+
+    document.addEventListener("click", handleClick, true);
+
+    return {
+        destroy() {
+            document.removeEventListener("click", handleClick, true);
+        },
+    };
+}
 </script>
 
-<div class="fixed top-0 left-0 z-50 w-full header">
+<div on:click={handleClickOutside} class="fixed top-0 left-0 z-50 w-full header">
   <div class="w-screen bg-transparent">
     <nav
       class="px-6 py-8 mx-auto md:flex md:justify-between md:items-end">
@@ -76,7 +103,8 @@
       </div>
 
       <div
-      
+        use:clickOutside
+        
         class="absolute top-0 left-0 z-100 right-0 flex-col grid place-items-center justify-center items-center bg-blue-900/60 h-screen md:h-full md:bg-transparent md:flex md:flex-row md:items-center md:justify-center space-x-0 md:space-x-4 md:mx-auto {showMenu
           ? 'flex'
           : 'hidden'}">

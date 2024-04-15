@@ -36,25 +36,25 @@
 
   @keyframes slide-from-right {
     from {
-      transform: scale(2.0);
+      transform: translateY(20px);
     }
   }
 
   @keyframes slide-to-left {
     to {
-      transform: scale(1.0);
+      transform: translateY(-20px);
     }
   }
 
   :root::view-transition-old(root) {
     animation:
       300ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
-      300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+      300ms cubic-bezier(0.4, 0, 0.2, 1) both;
   }
 
   :root::view-transition-new(root) {
     animation:
       300ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
-      300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+      300ms cubic-bezier(0.4, 0, 0.2, 1) both;
   }
 </style>

@@ -1,13 +1,21 @@
 <script lang="ts">
   let showMenu = false;
 
+
+
+  function handleClickOutside() {
+
+   
+  }
+
   function toggleNavbar() {
     showMenu = !showMenu;
   }
   /** Dispatch event on click outside of node */
+
 </script>
 
-<div class="fixed top-0 left-0 z-50 w-full header">
+<div  class="fixed top-0 left-0 z-50 w-full header">
   <div class="w-screen bg-transparent">
     <nav
       class="px-6 py-8 mx-auto md:flex md:justify-between md:items-end">
@@ -21,6 +29,7 @@
         <div class="flex items-center md:hidden z-1000">
           <button
             on:click={toggleNavbar}
+            
             type="button"
             class="flex text-white button-one md:hidden focus:outline-none focus:text-gray-400"
             aria-controls="primary-navigation"
@@ -76,7 +85,8 @@
       </div>
 
       <div
-      
+        use:clickOutside
+        
         class="absolute top-0 left-0 z-100 right-0 flex-col grid place-items-center justify-center items-center bg-blue-900/60 h-screen md:h-full md:bg-transparent md:flex md:flex-row md:items-center md:justify-center space-x-0 md:space-x-4 md:mx-auto {showMenu
           ? 'flex'
           : 'hidden'}">

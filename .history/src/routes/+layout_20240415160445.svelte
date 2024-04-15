@@ -36,13 +36,13 @@
 
   @keyframes slide-from-right {
     from {
-      transform: scale(2.0);
+      transform: scale(2.9) translateX(60px);
     }
   }
 
   @keyframes slide-to-left {
     to {
-      transform: scale(1.0);
+      transform: scale(1.0) translateX(60px);
     }
   }
 

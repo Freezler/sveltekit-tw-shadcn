@@ -76,7 +76,7 @@
       </div>
 
       <div
-      
+        on:click={toggleNavbar}
         class="absolute top-0 left-0 z-100 right-0 flex-col grid place-items-center justify-center items-center bg-blue-900/60 h-screen md:h-full md:bg-transparent md:flex md:flex-row md:items-center md:justify-center space-x-0 md:space-x-4 md:mx-auto {showMenu
           ? 'flex'
           : 'hidden'}">

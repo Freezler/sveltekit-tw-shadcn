@@ -36,7 +36,7 @@
 
   @keyframes slide-from-right {
     from {
-      transform: scale(2.0);
+      transform: scale(2.9);
     }
   }
 

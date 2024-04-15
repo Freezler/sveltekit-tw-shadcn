@@ -5,9 +5,21 @@
     showMenu = !showMenu;
   }
   /** Dispatch event on click outside of node */
+ function clickOutside(node: HTMLElement) {
+    toggleNavbar();
+    };
+
+    document.addEventListener("click", handleClick, true);
+
+    return {
+        destroy() {
+            document.removeEventListener("click", handleClick, true);
+        },
+    };
+}
 </script>
 
-<div class="fixed top-0 left-0 z-50 w-full header">
+<div  class="fixed top-0 left-0 z-50 w-full header">
   <div class="w-screen bg-transparent">
     <nav
       class="px-6 py-8 mx-auto md:flex md:justify-between md:items-end">
@@ -18,7 +30,7 @@
           >mijnProject
         </a>
         <!-- Mobile menu button -->
-        <div class="flex items-center md:hidden z-1000">
+        <div on:click={handleClickOutside} class="flex items-center md:hidden z-1000">
           <button
             on:click={toggleNavbar}
             type="button"
@@ -76,7 +88,8 @@
       </div>
 
       <div
-      
+        use:clickOutside
+        
         class="absolute top-0 left-0 z-100 right-0 flex-col grid place-items-center justify-center items-center bg-blue-900/60 h-screen md:h-full md:bg-transparent md:flex md:flex-row md:items-center md:justify-center space-x-0 md:space-x-4 md:mx-auto {showMenu
           ? 'flex'
           : 'hidden'}">
