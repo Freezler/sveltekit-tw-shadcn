@@ -1,11 +1,12 @@
 <script lang="ts">
-  // import { Icon } from "$lib/components/ui/icon/index.js";
+	import icon from '@iconify/svelte';
 	import { Button } from "$lib/components/ui/button/index.js";
 	import * as Card from "$lib/components/ui/card/index.js";
 	import { Label } from "$lib/components/ui/label/index.js";
 	import { Input } from "$lib/components/ui/input/index.js";
 </script>
-<Card.Root class="grid items-center justify-center w-3/4 bg-white max-w-[620px] place-items-center">
+
+<Card.Root>
 	<Card.Header class="space-y-1">
 		<Card.Title class="text-2xl">Create an account</Card.Title>
 		<Card.Description>Enter your email below to create your account</Card.Description>
@@ -42,4 +43,3 @@
 		<Button class="w-full">Create account</Button>
 	</Card.Footer>
 </Card.Root>
-

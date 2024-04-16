@@ -4,7 +4,7 @@
 	import * as Card from "$lib/components/ui/card/index.js";
 	import { Label } from "$lib/components/ui/label/index.js";
 	import { Input } from "$lib/components/ui/input/index.js";
-</script>
+</script></main>
 <Card.Root class="grid items-center justify-center w-3/4 bg-white max-w-[620px] place-items-center">
 	<Card.Header class="space-y-1">
 		<Card.Title class="text-2xl">Create an account</Card.Title>
@@ -42,4 +42,3 @@
 		<Button class="w-full">Create account</Button>
 	</Card.Footer>
 </Card.Root>
-

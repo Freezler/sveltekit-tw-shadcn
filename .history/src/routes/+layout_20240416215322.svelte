@@ -14,7 +14,7 @@
   });
 </script>
 
-<main class="grid w-full h-screen bg-indigo-950 place-items-center">
+<main class="grid w-full h-screen bg-black place-items-center">
   <Navbar />
   <slot />
 </main>

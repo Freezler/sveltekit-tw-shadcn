@@ -1,11 +1,12 @@
 <script lang="ts">
-  // import { Icon } from "$lib/components/ui/icon/index.js";
+	import { Icons } from "../lib/components/ui/icons/index.js";
 	import { Button } from "$lib/components/ui/button/index.js";
 	import * as Card from "$lib/components/ui/card/index.js";
 	import { Label } from "$lib/components/ui/label/index.js";
-	import { Input } from "$lib/components/ui/input/index.js";
+	import { Input } from "$lib/";
 </script>
-<Card.Root class="grid items-center justify-center w-3/4 bg-white max-w-[620px] place-items-center">
+
+<Card.Root>
 	<Card.Header class="space-y-1">
 		<Card.Title class="text-2xl">Create an account</Card.Title>
 		<Card.Description>Enter your email below to create your account</Card.Description>
@@ -13,11 +14,11 @@
 	<Card.Content class="grid gap-4">
 		<div class="grid grid-cols-2 gap-6">
 			<Button variant="outline">
-				<icon icon="logos:github-icon" />
+				<Icons.gitHub class="w-4 h-4 mr-2" />
 				GitHub
 			</Button>
 			<Button variant="outline">
-				<icon icon="logos:google-icon" />
+				<Icons.google class="w-4 h-4 mr-2" />
 				Google
 			</Button>
 		</div>
@@ -42,4 +43,3 @@
 		<Button class="w-full">Create account</Button>
 	</Card.Footer>
 </Card.Root>
-

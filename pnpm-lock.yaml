@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   bits-ui:
-    specifier: ^0.21.2
+    specifier: ^0.21.3
     version: 0.21.3(svelte@4.2.14)
   clsx:
     specifier: ^2.1.0
@@ -22,6 +22,9 @@ dependencies:
     version: 0.2.1(tailwindcss@3.4.3)
 
 devDependencies:
+  '@iconify/svelte':
+    specifier: ^3.1.6
+    version: 3.1.6(svelte@4.2.14)
   '@sveltejs/adapter-auto':
     specifier: ^3.0.0
     version: 3.2.0(@sveltejs/kit@2.5.5)
@@ -375,6 +378,19 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.3:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    dev: true
+
+  /@iconify/svelte@3.1.6(svelte@4.2.14):
+    resolution: {integrity: sha512-yLSrlkOx5J6xXU5GDLPBV/MdVBVEZhd36onfqSbxQobp1XBoWQbMPLNZyCAmTKCPnmzXSowGy79agl8FQ3kj6A==}
+    peerDependencies:
+      svelte: '*'
+    dependencies:
+      '@iconify/types': 2.0.0
+      svelte: 4.2.14
+    dev: true
+
+  /@iconify/types@2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
   /@internationalized/date@3.5.2:
