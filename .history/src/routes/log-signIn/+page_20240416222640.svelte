@@ -22,7 +22,7 @@
 				GitHub
 			</Button>
 			<Button variant="outline">
-				<Skull />
+				<span class="icon-[mdi-light--home]"></span>
 				Google
 			</Button>
 		</div>

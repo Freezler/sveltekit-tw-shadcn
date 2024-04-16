@@ -1,14 +1,9 @@
 <script lang="ts">
-  
+  import icon from "iconify-icon";
 	import { Button } from "$lib/components/ui/button/index.js";
 	import * as Card from "$lib/components/ui/card/index.js";
 	import { Label } from "$lib/components/ui/label/index.js";
 	import { Input } from "$lib/components/ui/input/index.js";
-
-  import { Skull } from 'lucide-svelte';
-
-
-
 </script>
 <Card.Root class="grid items-center justify-center w-3/4 bg-white max-w-[620px] place-items-center">
 	<Card.Header class="space-y-1">
@@ -18,11 +13,11 @@
 	<Card.Content class="grid gap-4">
 		<div class="grid grid-cols-2 gap-6">
 			<Button variant="outline">
-				<Skull />
+				<span class="icon-[mdi-light--home]"></span>
 				GitHub
 			</Button>
 			<Button variant="outline">
-				<Skull />
+				<span class="icon-[mdi-light--home]"></span>
 				Google
 			</Button>
 		</div>

@@ -8,7 +8,7 @@
   import { Skull } from 'lucide-svelte';
 
 
-
+<Skull />
 </script>
 <Card.Root class="grid items-center justify-center w-3/4 bg-white max-w-[620px] place-items-center">
 	<Card.Header class="space-y-1">
@@ -18,11 +18,11 @@
 	<Card.Content class="grid gap-4">
 		<div class="grid grid-cols-2 gap-6">
 			<Button variant="outline">
-				<Skull />
+				<span class="icon-[mdi-light--home]"></span>
 				GitHub
 			</Button>
 			<Button variant="outline">
-				<Skull />
+				<span class="icon-[mdi-light--home]"></span>
 				Google
 			</Button>
 		</div>
