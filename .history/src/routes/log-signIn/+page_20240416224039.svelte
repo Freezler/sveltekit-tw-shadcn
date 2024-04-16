@@ -11,12 +11,12 @@
 
 </script>
 <Card.Root class="grid items-center justify-center w-3/4 bg-white max-w-[620px] place-items-center">
-	<Card.Header class="space-y-1">
-		<Card.Title class="text-2xl">Create an account</Card.Title>
-		<Card.Description>Enter your email below to create your account</Card.Description>
+	<Card.Header class="grid-cols-2 space-y-1">
+		<Card.Title class="text-sm sm:text-base md:text-lg lg:text-2xl">Create an account</Card.Title>
+		<Card.Description class="text-sm sm:text-base md:text-lg lg:text-2xl">Enter your email below to create your account</Card.Description>
 	</Card.Header>
-	<Card.Content class="grid gap-4">
-		<div class="grid grid-cols-2 gap-6">
+	<Card.Content class="grid gap-4 ">
+		<div class="grid grid-cols-3 gap-0">
 			<Button variant="outline">
 				<Skull />
 				GitHub
@@ -24,6 +24,10 @@
 			<Button variant="outline">
 				<Skull />
 				Google
+			</Button>
+      <Button variant="outline">
+				<Skull />
+				Apple
 			</Button>
 		</div>
 		<div class="relative">
@@ -44,7 +48,10 @@
 		</div>
 	</Card.Content>
 	<Card.Footer>
-		<Button class="w-full">Create account</Button>
+		<Button class="w-full border-[1px] hover:bg-indigo-950 hover:text-white duration-700">Create account</Button>
 	</Card.Footer>
 </Card.Root>
 
+<style>
+ 
+</style>
