@@ -1,0 +1,8 @@
+<script lang="ts">
+  export default {LandingHero} from "$lib/components/ui/layout/landing-hero/LandingHero.svelte";
+ 
+</script>
+
+<main>
+  <LandingHero></LandingHero>
+</main>

@@ -1,0 +1,18 @@
+import { posts } from "../data.js";
+import { error } from '@sveltejs/kit';
+
+type Post = {
+  
+}
+
+async function load({ params }: { params: { slug: string } }) {
+  const post = posts.find((post) => post.slug === params.slug);
+
+  if (!post) throw error(404);
+
+  return {
+    post
+  };
+}
+
+export { load };
