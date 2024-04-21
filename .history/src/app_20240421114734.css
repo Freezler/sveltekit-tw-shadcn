@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion) {
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+:root {
+  --rose: hsla(333, 93%, 56%, 1);
+  --fandango: hsla(309, 77%, 40%, 1);
+  --grape: hsla(276, 91%, 38%, 1);
+  --chrysler-blue: hsla(268, 88%, 36%, 1);
+  --dark-blue: hsla(263, 87%, 35%, 1);
+  --zaffre: hsla(258, 86%, 34%, 1);
+  --palatinate-blue: hsla(243, 57%, 50%, 1);
+  --neon-blue: hsla(229, 83%, 60%, 1);
+  --chefchaouen-blue: hsla(212, 84%, 61%, 1);
+  --vivid-sky-blue: hsla(194, 85%, 62%, 1);
+  --dark-background: rgb(1, 4, 17);
+}
